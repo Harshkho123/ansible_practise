@@ -10,5 +10,9 @@
     apt: 
      name: tree 
      state: present 
-     
-        
+
+  - name: "copy file"
+    ansible.builtin.file:
+     src: /home/ubuntu/hbk
+     dest: /home/ubuntu
+     state: touch
