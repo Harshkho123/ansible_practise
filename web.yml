@@ -13,7 +13,7 @@
      state: present 
 
   - name: "copy file"
-    ansible.builtin.file:
+    template:
      src: /home/ubuntu/hbk
      dest: /home/ubuntu
      state: touch
